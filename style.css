@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'title';
+    src: url('kenyan-coffee.regular-webfont.woff2') format('woff2'),
+         url('kenyan-coffee.regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #434343;
+    border-radius: 16px;
+    box-shadow: inset 2px 2px 2px hsl(0deg 0% 100% / 25%), inset -2px -2px 2px rgb(0 0 0 / 25%);
+}
+
+html::-webkit-scrollbar-track {
+    background: linear-gradient(
+90deg
+,#434343,#434343 1px,#111 0,#111);
+}
+
+style* { margin: 0 auto; font-family: sans-serif; }
+
+body { 
+    margin: auto;
+    background: #494949;
+}
+
+header {
+	height: 70px;
+	background-color: #000000;
+	border: 2px solid #ff0000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+header > h1 {
+    font-family: title;
+	width: calc(100% - 160px);
+	text-align: center;
+	font-size: 400%;
+	color: rgb(255, 0, 0);
+    margin: 5px;
+}
+header > .top {
+	position: absolute;
+	left: 20px;
+}
+header > .top a.menu_icon i {
+	color: #494949;
+	font-size: 40px;
+	padding-top: 5px;
+	transition: .2s ease;
+}
+header > .top a.menu_icon:hover i {
+	color: rgb(255, 0, 0);
+}
+nav.menu {
+	width: 300px;
+	min-height: calc(100vh - 121px);
+	background-color: #494949;
+	position: absolute;
+	left: -304px;
+	transition: .3s all;
+    border: 2px solid red;
+}
+nav.menu > a {
+    background: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 2%;
+    display: block;
+    padding: 5px 5px;
+    margin: 15px 0px 0px 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+main {
+	width: 100%;
+	padding: 30px;
+	box-sizing: border-box;
+}
+footer {
+	height: 50px;
+	background-color: #494949;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+}
+
+.menu_show {
+	left: 0!important;
+}
+
+@media screen and (max-width: 425px) {
+	header h1 {
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 360px) {
+	nav.menu {
+		width: 100%;
+		left: -100%; 
+	}
+}
+
+.home_title {
+    color: rgb(255, 0, 0);
+    font-family: title;
+    font-size: 45px;
+    margin: -15px 0px 0px 15px;
+}
+
+.home_videos_one, .home_videos_two {
+    border: 2px solid rgb(255, 0, 0);
+    width: 45%;
+    background: black;
+    display: inline-block;
+    padding: 1%;
+}
+
+.home_text_two {
+    background: black;
+    color: rgb(255, 0, 0);
+    border: 2px solid red;
+    margin: 5px 0px 5px 0px;
+    padding: 5px;
+    font-family: title;
+    font-size: 40px;
+}
+
+.home_text_one {
+    background: black;
+    color: white;
+    border: 2px solid red;
+    margin: 5px 0px 5px 0px;
+    padding: 5px;
+    font-family: title;
+    font-size: 20px;
+}
+
+.home_welcome, .home_purpose {
+    color: red;
+    font-family: title;
+    font-size: 35px;
+    margin: 0px 0px 5px 0px;
+}
+
+
+
+.borderlands-two {
+    background: black;
+    border: 2px solid red;
+    font-family: title;
+    font-size: 35px;
+    color: white;
+}
+
+.borderlands-two-links {
+    color: red;
+    display: inline-block;
+}
+
+.borderlands-two-links a {
+    color: blue;
+    display: inline-block;
+}
+
+.gibbed-one {
+    border: 2px solid red;
+    margin: 5px;
+    float: left;
+}
